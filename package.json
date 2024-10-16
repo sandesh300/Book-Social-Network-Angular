@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "api-gen": "ng-openapi-gen --input ./src/openapi/openapi.json --output ./src/app/services"
   },
   "private": true,
   "dependencies": {
@@ -20,6 +21,7 @@
     "@angular/router": "^18.2.0",
     "@fortawesome/angular-fontawesome": "^0.15.0",
     "bootstrap": "^5.3.3",
+    "ng-openapi-gen": "^0.52.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"
