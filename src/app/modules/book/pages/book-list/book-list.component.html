@@ -1,5 +1,5 @@
 <h3>Books list</h3>
-<!-- <div
+<div
   *ngIf="message"
   class="alert "
   [class.alert-danger]="level==='error'"
@@ -9,14 +9,14 @@
   <p>{{message}}</p>
 </div>
 <hr>
-<div class="d-flex justify-content-start gap-2 flex-wrap"> -->
-  <!-- <app-book-card
+<div class="d-flex justify-content-start gap-2 flex-wrap">
+  <app-book-card
     *ngFor="let book of bookResponse.content"
     [book]="book"
     (borrow)="borrowBook($event)"
     (details)="displayBookDetails($event)"
-  ></app-book-card> -->
-<!-- </div>
+  ></app-book-card>
+</div>
 <div class="d-flex justify-content-center mt-3">
   <nav aria-label="Page navigation example">
     <ul class="pagination">
@@ -77,10 +77,4 @@
       </li>
     </ul>
   </nav>
-</div> -->
-
-<hr>
-<div class="d-flex justify-content-start gap-2 flex-wrap"> 
-<app-book-card *ngFor = "let book of bookResponse.content"></app-book-card>
-
 </div>
