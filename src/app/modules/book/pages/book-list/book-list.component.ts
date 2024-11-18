@@ -13,9 +13,9 @@ export class BookListComponent implements OnInit {
   bookResponse: PageResponseBookResponse = {};
   page = 0;
   size = 5;
-  // pages: any = [];
-  // message = '';
-  // level: 'success' |'error' = 'success';
+   pages: any = [];
+   message = '';
+   level: 'success' |'error' = 'success';
 
   constructor(
     private bookService: BookService,
@@ -71,23 +71,23 @@ export class BookListComponent implements OnInit {
     return this.page === this.bookResponse.totalPages as number - 1;
   }
 
-  // borrowBook(book: BookResponse) {
-  //   this.message = '';
-  //   this.level = 'success';
-  //   this.bookService.borrowBook({
-  //     'book-id': book.id as number
-  //   }).subscribe({
-  //     next: () => {
-  //       this.level = 'success';
-  //       this.message = 'Book successfully added to your list';
-  //     },
-  //     error: (err) => {
-  //       console.log(err);
-  //       this.level = 'error';
-  //       this.message = err.error.error;
-  //     }
-  //   });
-  // }
+  borrowBook(book: BookResponse) {
+     this.message = '';
+    this.level = 'success';
+    this.bookService.borrowBook({
+      'book-id': book.id as number
+    }).subscribe({
+      next: () => {
+       this.level = 'success';
+         this.message = 'Book successfully added to your list';
+      },
+      error: (err) => {
+        console.log(err);
+        this.level = 'error';
+         this.message = err.error.error;
+      }
+    });
+  }
 
   displayBookDetails(book: BookResponse) {
     this.router.navigate(['books', 'details', book.id]);
