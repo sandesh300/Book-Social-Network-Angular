@@ -13,9 +13,9 @@ export class BookListComponent implements OnInit {
   bookResponse: PageResponseBookResponse = {};
   page = 0;
   size = 5;
-   pages: any = [];
-   message = '';
-   level: 'success' |'error' = 'success';
+  pages: any = [];
+  message = '';
+  level: 'success' |'error' = 'success';
 
   constructor(
     private bookService: BookService,
@@ -53,7 +53,7 @@ export class BookListComponent implements OnInit {
   }
 
   goToPreviousPage() {
-    this.page--;
+    this.page --;
     this.findAllBooks();
   }
 
@@ -72,19 +72,19 @@ export class BookListComponent implements OnInit {
   }
 
   borrowBook(book: BookResponse) {
-     this.message = '';
+    this.message = '';
     this.level = 'success';
     this.bookService.borrowBook({
       'book-id': book.id as number
     }).subscribe({
       next: () => {
-       this.level = 'success';
-         this.message = 'Book successfully added to your list';
+        this.level = 'success';
+        this.message = 'Book successfully added to your list';
       },
       error: (err) => {
         console.log(err);
         this.level = 'error';
-         this.message = err.error.error;
+        this.message = err.error.error;
       }
     });
   }
