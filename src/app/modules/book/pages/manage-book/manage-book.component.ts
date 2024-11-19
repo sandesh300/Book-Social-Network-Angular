@@ -35,7 +35,7 @@ export class ManageBookComponent implements OnInit {
       }).subscribe({
         next: (book) => {
          this.bookRequest = {
-           id: book.id,
+            id: book.id,
            title: book.title as string,
            authorName: book.authorName as string,
            isbn: book.isbn as string,
