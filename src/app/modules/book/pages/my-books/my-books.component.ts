@@ -70,6 +70,7 @@ export class MyBooksComponent implements OnInit {
     return this.page === this.bookResponse.totalPages as number - 1;
   }
 
+  
   archiveBook(book: BookResponse) {
     this.bookService.updateArchivedStatus({
       'book-id': book.id as number
@@ -80,7 +81,7 @@ export class MyBooksComponent implements OnInit {
     });
   }
 
-  
+
   shareBook(book: BookResponse) {
     this.bookService.updateShareableStatus({
       'book-id': book.id as number
