@@ -11,7 +11,7 @@ import { ManageBookComponent } from './pages/manage-book/manage-book.component';
 import {FormsModule} from '@angular/forms';
 import { BorrowedBookListComponent } from './pages/borrowed-book-list/borrowed-book-list.component';
 import { RatingComponent } from './components/rating/rating.component';
-// import { ReturnedBooksComponent } from './pages/returned-books/returned-books.component';
+import { ReturnedBooksComponent } from './pages/returned-books/returned-books.component';
 // import { BookDetailsComponent } from './pages/book-details/book-details.component';
 
 
@@ -25,7 +25,7 @@ import { RatingComponent } from './components/rating/rating.component';
     ManageBookComponent,
     BorrowedBookListComponent,
     RatingComponent,
-    // ReturnedBooksComponent,
+    ReturnedBooksComponent,
     // BookDetailsComponent
   ],
   imports: [

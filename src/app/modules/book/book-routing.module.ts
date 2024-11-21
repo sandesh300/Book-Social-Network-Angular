@@ -5,7 +5,7 @@ import {BookListComponent} from './pages/book-list/book-list.component';
  import {MyBooksComponent} from './pages/my-books/my-books.component';
  import {ManageBookComponent} from './pages/manage-book/manage-book.component';
 import {BorrowedBookListComponent} from './pages/borrowed-book-list/borrowed-book-list.component';
-// import {ReturnedBooksComponent} from './pages/returned-books/returned-books.component';
+import {ReturnedBooksComponent} from './pages/returned-books/returned-books.component';
 // import {authGuard} from '../../services/guard/auth.guard';
 // import {BookDetailsComponent} from './pages/book-details/book-details.component';
 
@@ -30,11 +30,11 @@ const routes: Routes = [
        component: BorrowedBookListComponent,
        // canActivate: [authGuard]
       },
-      // {
-      //   path: 'my-returned-books',
-      //   component: ReturnedBooksComponent,
-      //   canActivate: [authGuard]
-      // },
+      {
+        path: 'my-returned-books',
+        component: ReturnedBooksComponent,
+      //  canActivate: [authGuard]
+      },
       // {
       //   path: 'details/:bookId',
       //   component: BookDetailsComponent,
