@@ -26,6 +26,8 @@ export class MenuComponent implements OnInit {
     }
 
   async logout() {
-    // await this.keycloakService.logout();
+    // this.keycloakService.logout();
+    localStorage.removeItem('token');
+    window.location.reload
   }
 }
