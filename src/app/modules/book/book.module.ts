@@ -9,7 +9,7 @@ import { BookCardComponent } from './components/book-card/book-card.component';
 import { MyBooksComponent } from './pages/my-books/my-books.component';
 import { ManageBookComponent } from './pages/manage-book/manage-book.component';
 import {FormsModule} from '@angular/forms';
-// import { BorrowedBookListComponent } from './pages/borrowed-book-list/borrowed-book-list.component';
+import { BorrowedBookListComponent } from './pages/borrowed-book-list/borrowed-book-list.component';
 import { RatingComponent } from './components/rating/rating.component';
 // import { ReturnedBooksComponent } from './pages/returned-books/returned-books.component';
 // import { BookDetailsComponent } from './pages/book-details/book-details.component';
@@ -23,7 +23,7 @@ import { RatingComponent } from './components/rating/rating.component';
     BookCardComponent,
     MyBooksComponent,
     ManageBookComponent,
-    // BorrowedBookListComponent,
+    BorrowedBookListComponent,
     RatingComponent,
     // ReturnedBooksComponent,
     // BookDetailsComponent
