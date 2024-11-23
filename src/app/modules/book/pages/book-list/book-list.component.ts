@@ -35,9 +35,9 @@ export class BookListComponent implements OnInit {
       .subscribe({
         next: (books) => {
           this.bookResponse = books;
-          // this.pages = Array(this.bookResponse.totalPages)
-          //   .fill(0)
-          //   .map((x, i) => i);
+          this.pages = Array(this.bookResponse.totalPages)
+            .fill(0)
+            .map((x, i) => i);
         }
       });
   }
