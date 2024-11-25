@@ -341,7 +341,7 @@ Authorization: Bearer <JWT_access_token>
     "id": 1,
     "bookId": 58,
     "returnApproved": true,
-    "approvedAt": "2024-02-22T10:15:30Z"
+    "approvedAt": "2024-10-22T10:23:35Z"
   }
   ```
 - **Success Code**: `200 OK`
@@ -357,7 +357,7 @@ Authorization: Bearer <JWT_access_token>
   {
     "bookId": 58,
     "coverUrl": "http://example.com/book-covers/58.jpg",
-    "uploadedAt": "2024-02-22T10:15:30Z"
+    "uploadedAt": "2024-10-22T10:25:30Z"
   }
   ```
 - **Success Code**: `202 Accepted`
