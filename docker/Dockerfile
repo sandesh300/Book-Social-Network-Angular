@@ -1,5 +1,5 @@
-# build stage
-FROM node:20 as build-stage
+# Build stage
+FROM node:20 AS build-stage
 
 WORKDIR /app
 
@@ -9,7 +9,7 @@ RUN npm install
 
 COPY . .
 
-RUN npm run build --prod
+RUN npm run build
 
 FROM nginx:alpine
 
