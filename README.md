@@ -61,6 +61,10 @@ By following this project,
 ------
 ## API Endpoints
 
+### OpenAPI Documentation
+![Screenshot (66)](https://github.com/user-attachments/assets/617c9434-71e3-48a0-881a-4163496812e8)
+![Screenshot (67)](https://github.com/user-attachments/assets/d2499c7f-43e0-4a6d-bd68-46cd9e6da2f0)
+
 ### **User Authentication**
 
 1. **Register User**
