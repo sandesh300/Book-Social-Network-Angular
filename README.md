@@ -1,6 +1,6 @@
 # Book Social Network
 
-Book Social Network is a full-stack application that enables users to manage their book collections and engage with a community of book enthusiasts. It offers features such as user registration, secure email validation, book management (including creation, updating, sharing, and archiving), book borrowing with checks for availability, book return functionality, and approval of book returns. The application ensures security using JWT tokens and adheres to best practices in REST API design. The backend is built with Spring Boot 3 and Spring Security 6, PostgreSQL database, while the frontend is developed using Angular with Bootstrap for styling.
+Book Social Network is a full-stack application that enables users to manage their book collections and engage with a community of book enthusiasts. It offers features such as user registration, secure email validation, book management (including creation, updating, sharing, and archiving), book borrowing with checks for availability, book return functionality, and approval of book returns. The application ensures security using JWT tokens and adheres to best practices in REST API design. The backend is built with Spring Boot 3 and Spring Security 6, postgreSQL database, while the frontend is developed using Angular with Bootstrap for styling.
 
 ---
 ## Features
@@ -406,4 +406,22 @@ Open a web browser and go to `http://localhost:8088/api/v1/swagger-ui/index.html
   Open a web browser and go to `http://localhost:1080/#/
 
 --- 
+### Login Page
+![Screenshot (62)](https://github.com/user-attachments/assets/6a4b99dc-934f-4ab4-a23a-119b16cccc8e)
+
+### Register Page
+![Screenshot (63)](https://github.com/user-attachments/assets/1199ffa3-6bfc-481a-aecc-e12bf87278f0)
+
+### Email Verification code 
+![Screenshot (68)](https://github.com/user-attachments/assets/fce37064-77d7-4080-9293-ca7bfc2d14b4)
+
+### Book page
+![Screenshot (64)](https://github.com/user-attachments/assets/ea4ac49d-2b65-4fa4-99ea-b3a4e9dfdc0e)
+
+### Book Create Page
+![Screenshot (65)](https://github.com/user-attachments/assets/d632c7fb-4ab3-4ba3-901d-fe9e5a70a29a)
+
+
+
+
 
